@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="content">Quản Lý Sinh Viên</h1>
+    </header>
+    <section>
+      <form>
+        <div>
+          <h2>Form Nhập Thông Tin</h2>
+        </div>
+        <label for="firstName">Họ và tên:</label>
+        <input
+          type="text"
+          name="firstName"
+          placeholder="vui lòng nhập tên"
+          id="studentName"
+        />
+        <br />
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          name="email"
+          placeholder="vui lòng nhập email"
+          id="email"
+        />
+        <br />
+        <label for="phoneNumber">Số điện thoại:</label>
+        <input
+          type="number"
+          name="phoneNumber"
+          placeholder="vui lòng nhập số điện thoại"
+          id="phoneNumber"
+        />
+        <br />
+        <label for="placeBorn">Quê quán:</label>
+        <input
+          type="text"
+          name="placeBorn"
+          placeholder="vui lòng nhập địa chỉ quê quán"
+        />
+        <br />
+        <label for="sex">Giới tính:</label>
+        <input type="radio" name="sex" />
+        <label>Nam</label>
+        <input type="radio" name="sex" />
+        <label>Nữ</label> <br />
+        <button id="btnSave">Lưu lại</button>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Điện thoại</th>
+            <th>Địa chỉ</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+      </table>
+      <script src="app.js"></script>
+    </section>
+  </body>
+</html>
